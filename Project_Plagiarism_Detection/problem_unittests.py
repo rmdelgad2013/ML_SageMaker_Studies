@@ -119,6 +119,7 @@ def test_lcs(df, lcs_word):
         results.append(val)
         
     # check correct results
+#     import pdb; pdb.set_trace()
     assert all(np.isclose(results, lcs_vals, rtol=1e-05)), 'LCS calculations are incorrect.'
     
     _print_success_message()
